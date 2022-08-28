@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Layer Shadow Animation</title>
+
+    <style>
+        body {
+            background-color: black;
+            padding: 5em;
+        }
+
+        .card {
+            width: 150px;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            transform: rotate(20deg) skew(-10deg, -5deg);
+            transition: box-shadow .25s ease-in;
+        }
+
+        .card:hover {
+            box-shadow:
+                rgba(255, 255, 255, 0.5) 5px 3px,
+                rgba(255, 255, 255, 0.4) 10px 6px,
+                rgba(255, 255, 255, 0.3) 15px 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card"></div>
+</body>
+
+</html>
